@@ -10,6 +10,7 @@
 		326C11D8196F899F00EB1239 /* SetOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 326C11D7196F899F00EB1239 /* SetOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		326C11DE196F899F00EB1239 /* SetOf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 326C11D2196F899F00EB1239 /* SetOf.framework */; };
 		326C11E5196F899F00EB1239 /* SetOfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326C11E4196F899F00EB1239 /* SetOfTests.swift */; };
+		326C11EF196F89B100EB1239 /* SetOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326C11EE196F89B100EB1239 /* SetOf.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,8 @@
 		326C11DD196F899F00EB1239 /* SetOfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SetOfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		326C11E3196F899F00EB1239 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		326C11E4196F899F00EB1239 /* SetOfTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetOfTests.swift; sourceTree = "<group>"; };
+		326C11EE196F89B100EB1239 /* SetOf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetOf.swift; sourceTree = "<group>"; };
+		326C11F01970733A00EB1239 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +56,7 @@
 		326C11C8196F899E00EB1239 = {
 			isa = PBXGroup;
 			children = (
+				326C11F01970733A00EB1239 /* MyPlayground.playground */,
 				326C11D4196F899F00EB1239 /* SetOf */,
 				326C11E1196F899F00EB1239 /* SetOfTests */,
 				326C11D3196F899F00EB1239 /* Products */,
@@ -73,6 +77,7 @@
 			children = (
 				326C11D7196F899F00EB1239 /* SetOf.h */,
 				326C11D5196F899F00EB1239 /* Supporting Files */,
+				326C11EE196F89B100EB1239 /* SetOf.swift */,
 			);
 			path = SetOf;
 			sourceTree = "<group>";
@@ -210,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				326C11EF196F89B100EB1239 /* SetOf.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +326,7 @@
 		326C11E9196F899F00EB1239 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -329,12 +336,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		326C11EA196F899F00EB1239 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
